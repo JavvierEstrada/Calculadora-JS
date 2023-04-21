@@ -1,0 +1,77 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #554aa4;
+	display: grid;
+	place-items: center;
+}
+
+.containderCalc {
+	background-color: #252525e6;
+	width: 300px;
+	max-width: 100%;
+	padding: 1.1rem;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+}
+
+.pantalla {
+	grid-column: 1/5;
+	background-color: #fff;
+	padding: 1.5rem;
+	font-size: 2.3rem;
+	text-align: right;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+.btn {
+	background-color: rgb(255, 255, 255);
+	color: #000;
+	border: none;
+	border-radius: 10%;
+	padding: 1.5em 0.5rem;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+#cero {
+	grid-column: span 2;
+}
+
+#igual {
+	grid-row: span 2;
+	background-color: rgba(218, 38, 38, 0.8);
+}
+
+#igual:hover {
+	background-color: rgba(218, 38, 38);
+}
+
+.btn-amarillo {
+	background-color: rgba(254, 185, 38, 0.8);
+}
+
+.btn-amarillo:hover {
+	background-color: rgba(254, 185, 38);
+}
