@@ -23,15 +23,17 @@ botones.forEach((boton) => {
 		}
 
 		//Botón Igual
-        if(boton.id === "igual"){
-            try{
-                pantalla.textContent = eval(pantalla.textContent);
-            } catch{
-                pantalla.textContent = "Error";
-            }
-            return;
-        }
-
+     	//Botón Igual
+		if (boton.id === "igual") {
+			try {
+				let resultado = eval(pantalla.textContent);
+				pantalla.textContent = parseFloat(resultado.toFixed(5));
+			} catch {
+				pantalla.textContent = "Error";
+			}
+			return;
+		}
+		
 		if (pantalla.textContent === "0" || pantalla.textContent === "Error") {
 			pantalla.textContent = btnPresionado;
 		} else {
